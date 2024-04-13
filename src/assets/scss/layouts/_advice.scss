@@ -1,0 +1,70 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+
+.advice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $gap-medium;
+
+  background-color: $clr-neutral-dark-grayish-blue;
+
+  padding: 3em;
+  padding-bottom: 4.5em;
+
+  border-radius: 1rem;
+
+  box-shadow: 0 0 4rem rgba(37, 49, 55, 0.557);
+
+  position: relative;
+
+  &__heading {
+    @include font-heading1-mid;
+  }
+
+  &__content {
+    @include font-quote-bold;
+  }
+
+  &__dice-button {
+    position: absolute;
+    bottom: -2rem;
+
+    cursor: pointer;
+
+    padding: 1.25em;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    border: none;
+
+    outline: transparent;
+
+    background-color: $clr-primary-neon-green;
+
+    transition: rotate 0.1s ease-in-out, scale 0.1s ease-in-out;
+
+    animation: popup-animation 1s ease-out;
+
+    &:hover,
+    &:focus {
+      rotate: 240deg;
+      scale: 1.2;
+    }
+  }
+
+  @keyframes popup-animation {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  animation: popup-animation 0.3s ease-out;
+}

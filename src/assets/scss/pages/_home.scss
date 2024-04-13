@@ -1,0 +1,25 @@
+@use '../utils/variables' as *;
+
+html {
+  font-family: $ff-manrope;
+  font-size: $fs-base;
+}
+
+body {
+  max-width: $max-width-body;
+  min-width: $min-width-body;
+
+  min-height: $min-height-screen;
+
+  margin-inline: auto;
+
+  background-color: $clr-neutral-dark-blue;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: $min-height-screen;
+}

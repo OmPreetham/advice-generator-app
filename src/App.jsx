@@ -10,7 +10,7 @@ const App = () => {
         <picture className="advice__divider-picture">
           <source
             srcSet="/images/pattern-divider-mobile.svg"
-            media="(max-width: 600px)"
+            media="(max-width: 450px)"
           />
           <img
             className="advice__divider"
@@ -18,13 +18,13 @@ const App = () => {
             alt="Pattern Divider"
           />
         </picture>
-        <div className="advice__dice-wrapper">
+        <button className="advice__dice-button">
           <img
             className="advice__dice"
             src="/images/icon-dice.svg"
             alt="Dice Icon"
           />
-        </div>
+        </button>
       </section>
     </main>
   )

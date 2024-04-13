@@ -1,0 +1,20 @@
+@use '../utils/variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@mixin font-heading1-mid {
+  font-size: $fs-heading1;
+  font-family: $ff-manrope;
+  font-weight: $fw-800;
+  color: $clr-primary-neon-green;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+@mixin font-quote-bold {
+  font-size: $fs-quote;
+  font-weight: $fw-800;
+  font-family: $ff-manrope;
+  color: $clr-primary-light-cyan;
+  text-align: center;
+}
