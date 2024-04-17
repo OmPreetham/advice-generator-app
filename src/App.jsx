@@ -9,19 +9,19 @@ const App = () => {
         </p>
         <picture className="advice__divider-picture">
           <source
-            srcSet="/images/pattern-divider-mobile.svg"
+            srcSet="images/pattern-divider-mobile.svg"
             media="(max-width: 450px)"
           />
           <img
             className="advice__divider"
-            src="/images/pattern-divider-desktop.svg"
+            src="images/pattern-divider-desktop.svg"
             alt="Pattern Divider"
           />
         </picture>
         <button className="advice__dice-button">
           <img
             className="advice__dice"
-            src="/images/icon-dice.svg"
+            src="images/icon-dice.svg"
             alt="Dice Icon"
           />
         </button>
